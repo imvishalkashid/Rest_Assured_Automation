@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="7" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3088" started-at="2019-01-22T15:05:46Z" finished-at="2019-01-22T15:05:49Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3088" started-at="2019-01-22T15:05:46Z" finished-at="2019-01-22T15:05:49Z">
+      <class name="com.poc.twitter.test.GET_statuses_home_timeline_Test">
+        <test-method status="PASS" signature="getLatestTweet()[pri:0, instance:com.poc.twitter.test.GET_statuses_home_timeline_Test@3dd4520b]" name="getLatestTweet" is-config="true" duration-ms="2988" started-at="2019-01-22T15:05:46Z" finished-at="2019-01-22T15:05:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLatestTweet -->
+        <test-method status="PASS" signature="T01_SearchSource()[pri:0, instance:com.poc.twitter.test.GET_statuses_home_timeline_Test@3dd4520b]" name="T01_SearchSource" duration-ms="15" started-at="2019-01-22T15:05:49Z" finished-at="2019-01-22T15:05:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- T01_SearchSource -->
+        <test-method status="PASS" signature="T02_Search_Screen_name()[pri:0, instance:com.poc.twitter.test.GET_statuses_home_timeline_Test@3dd4520b]" name="T02_Search_Screen_name" duration-ms="8" started-at="2019-01-22T15:05:49Z" finished-at="2019-01-22T15:05:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- T02_Search_Screen_name -->
+        <test-method status="PASS" signature="T03_Search_Name()[pri:0, instance:com.poc.twitter.test.GET_statuses_home_timeline_Test@3dd4520b]" name="T03_Search_Name" duration-ms="8" started-at="2019-01-22T15:05:49Z" finished-at="2019-01-22T15:05:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- T03_Search_Name -->
+        <test-method status="PASS" signature="T04_Search_followers_count()[pri:0, instance:com.poc.twitter.test.GET_statuses_home_timeline_Test@3dd4520b]" name="T04_Search_followers_count" duration-ms="11" started-at="2019-01-22T15:05:49Z" finished-at="2019-01-22T15:05:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- T04_Search_followers_count -->
+        <test-method status="PASS" signature="T05_Search_friends_count()[pri:0, instance:com.poc.twitter.test.GET_statuses_home_timeline_Test@3dd4520b]" name="T05_Search_friends_count" duration-ms="10" started-at="2019-01-22T15:05:49Z" finished-at="2019-01-22T15:05:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- T05_Search_friends_count -->
+        <test-method status="FAIL" signature="T06_Search_Statuses_count()[pri:0, instance:com.poc.twitter.test.GET_statuses_home_timeline_Test@3dd4520b]" name="T06_Search_Statuses_count" duration-ms="10" started-at="2019-01-22T15:05:49Z" finished-at="2019-01-22T15:05:49Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Status count is wrong! expected:<181> but was:<190>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Status count is wrong! expected:<181> but was:<190>
+at org.junit.Assert.fail(Assert.java:88)
+at org.junit.Assert.failNotEquals(Assert.java:834)
+at org.junit.Assert.assertEquals(Assert.java:118)
+at com.poc.twitter.test.GET_statuses_home_timeline_Test.T06_Search_Statuses_count(GET_statuses_home_timeline_Test.java:100)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- T06_Search_Statuses_count -->
+        <test-method status="FAIL" signature="T07_Search_Statuses_text()[pri:0, instance:com.poc.twitter.test.GET_statuses_home_timeline_Test@3dd4520b]" name="T07_Search_Statuses_text" duration-ms="10" started-at="2019-01-22T15:05:49Z" finished-at="2019-01-22T15:05:49Z">
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[Status text is wrong! expected:<...ing this tweet with [Mon Jan 21 17:44:43] IST 2019 Automation> but was:<...ing this tweet with [Tue Jan 22 20:34:22] IST 2019 Automation>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: Status text is wrong! expected:<...ing this tweet with [Mon Jan 21 17:44:43] IST 2019 Automation> but was:<...ing this tweet with [Tue Jan 22 20:34:22] IST 2019 Automation>
+at org.junit.Assert.assertEquals(Assert.java:115)
+at com.poc.twitter.test.GET_statuses_home_timeline_Test.T07_Search_Statuses_text(GET_statuses_home_timeline_Test.java:107)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- T07_Search_Statuses_text -->
+      </class> <!-- com.poc.twitter.test.GET_statuses_home_timeline_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

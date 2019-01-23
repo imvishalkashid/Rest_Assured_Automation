@@ -1,0 +1,190 @@
+2019-Jan-04 18:33:23,973 [main] com.poc.twitter.test.GET_statuses_home_timeline_Test 
+  INFO  ****************************** Starting test cases execution  *****************************************
+2019-Jan-04 18:33:23,977 [main] com.poc.twitter.test.GET_statuses_home_timeline_Test 
+  INFO  ****************************** Loading the Base Url  *****************************************
+2019-Jan-04 18:33:25,039 [main] org.apache.http.impl.conn.BasicClientConnectionManager 
+  DEBUG Get connection for route {s}->https://api.twitter.com:443
+2019-Jan-04 18:33:25,049 [main] org.apache.http.impl.conn.DefaultClientConnectionOperator 
+  DEBUG Connecting to api.twitter.com:443
+2019-Jan-04 18:33:26,164 [main] org.apache.http.client.protocol.RequestAddCookies 
+  DEBUG CookieSpec selected: ignoreCookies
+2019-Jan-04 18:33:26,167 [main] org.apache.http.client.protocol.RequestAuthCache 
+  DEBUG Auth cache not set in the context
+2019-Jan-04 18:33:26,167 [main] org.apache.http.client.protocol.RequestTargetAuthentication 
+  DEBUG Target auth state: UNCHALLENGED
+2019-Jan-04 18:33:26,167 [main] org.apache.http.client.protocol.RequestProxyAuthentication 
+  DEBUG Proxy auth state: UNCHALLENGED
+2019-Jan-04 18:33:26,180 [main] org.apache.http.impl.client.DefaultHttpClient 
+  DEBUG Attempt 1 to execute request
+2019-Jan-04 18:33:26,180 [main] org.apache.http.impl.conn.DefaultClientConnection 
+  DEBUG Sending request: GET /1.1/statuses/home_timeline.json?count=5 HTTP/1.1
+2019-Jan-04 18:33:26,180 [main] org.apache.http.wire 
+  DEBUG  >> "GET /1.1/statuses/home_timeline.json?count=5 HTTP/1.1[\r][\n]"
+2019-Jan-04 18:33:26,180 [main] org.apache.http.wire 
+  DEBUG  >> "Accept: */*[\r][\n]"
+2019-Jan-04 18:33:26,180 [main] org.apache.http.wire 
+  DEBUG  >> "Host: api.twitter.com[\r][\n]"
+2019-Jan-04 18:33:26,180 [main] org.apache.http.wire 
+  DEBUG  >> "Connection: Keep-Alive[\r][\n]"
+2019-Jan-04 18:33:26,180 [main] org.apache.http.wire 
+  DEBUG  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_191)[\r][\n]"
+2019-Jan-04 18:33:26,180 [main] org.apache.http.wire 
+  DEBUG  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-Jan-04 18:33:26,180 [main] org.apache.http.wire 
+  DEBUG  >> "Authorization: OAuth oauth_nonce="2926108567", oauth_signature="8F4BM0d6S5KvFLNh2lLVLLVEHEA%3D", oauth_token="1078185077580787712-8V9HHBfFPFQwHiM5hr3jQ0SrE62fhw", oauth_consumer_key="msB8D1l1DipC7srZU3b6oLpCz", oauth_timestamp="1546607006", oauth_signature_method="HMAC-SHA1", oauth_version="1.0"[\r][\n]"
+2019-Jan-04 18:33:26,180 [main] org.apache.http.wire 
+  DEBUG  >> "[\r][\n]"
+2019-Jan-04 18:33:26,180 [main] org.apache.http.headers 
+  DEBUG >> GET /1.1/statuses/home_timeline.json?count=5 HTTP/1.1
+2019-Jan-04 18:33:26,180 [main] org.apache.http.headers 
+  DEBUG >> Accept: */*
+2019-Jan-04 18:33:26,180 [main] org.apache.http.headers 
+  DEBUG >> Host: api.twitter.com
+2019-Jan-04 18:33:26,180 [main] org.apache.http.headers 
+  DEBUG >> Connection: Keep-Alive
+2019-Jan-04 18:33:26,180 [main] org.apache.http.headers 
+  DEBUG >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_191)
+2019-Jan-04 18:33:26,180 [main] org.apache.http.headers 
+  DEBUG >> Accept-Encoding: gzip,deflate
+2019-Jan-04 18:33:26,180 [main] org.apache.http.headers 
+  DEBUG >> Authorization: OAuth oauth_nonce="2926108567", oauth_signature="8F4BM0d6S5KvFLNh2lLVLLVEHEA%3D", oauth_token="1078185077580787712-8V9HHBfFPFQwHiM5hr3jQ0SrE62fhw", oauth_consumer_key="msB8D1l1DipC7srZU3b6oLpCz", oauth_timestamp="1546607006", oauth_signature_method="HMAC-SHA1", oauth_version="1.0"
+2019-Jan-04 18:33:26,605 [main] org.apache.http.wire 
+  DEBUG  << "HTTP/1.1 200 OK[\r][\n]"
+2019-Jan-04 18:33:26,606 [main] org.apache.http.wire 
+  DEBUG  << "cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0[\r][\n]"
+2019-Jan-04 18:33:26,606 [main] org.apache.http.wire 
+  DEBUG  << "content-disposition: attachment; filename=json.json[\r][\n]"
+2019-Jan-04 18:33:26,606 [main] org.apache.http.wire 
+  DEBUG  << "content-encoding: gzip[\r][\n]"
+2019-Jan-04 18:33:26,610 [main] org.apache.http.wire 
+  DEBUG  << "content-length: 1020[\r][\n]"
+2019-Jan-04 18:33:26,610 [main] org.apache.http.wire 
+  DEBUG  << "content-type: application/json;charset=utf-8[\r][\n]"
+2019-Jan-04 18:33:26,610 [main] org.apache.http.wire 
+  DEBUG  << "date: Fri, 04 Jan 2019 13:03:29 GMT[\r][\n]"
+2019-Jan-04 18:33:26,611 [main] org.apache.http.wire 
+  DEBUG  << "expires: Tue, 31 Mar 1981 05:00:00 GMT[\r][\n]"
+2019-Jan-04 18:33:26,611 [main] org.apache.http.wire 
+  DEBUG  << "last-modified: Fri, 04 Jan 2019 13:03:29 GMT[\r][\n]"
+2019-Jan-04 18:33:26,611 [main] org.apache.http.wire 
+  DEBUG  << "pragma: no-cache[\r][\n]"
+2019-Jan-04 18:33:26,611 [main] org.apache.http.wire 
+  DEBUG  << "server: tsa_k[\r][\n]"
+2019-Jan-04 18:33:26,612 [main] org.apache.http.wire 
+  DEBUG  << "set-cookie: personalization_id="v1_HkdAIfxCBdi2SneyF2E/Eg=="; Max-Age=63072000; Expires=Sun, 3 Jan 2021 13:03:29 GMT; Path=/; Domain=.twitter.com[\r][\n]"
+2019-Jan-04 18:33:26,612 [main] org.apache.http.wire 
+  DEBUG  << "set-cookie: lang=en; Path=/[\r][\n]"
+2019-Jan-04 18:33:26,613 [main] org.apache.http.wire 
+  DEBUG  << "set-cookie: guest_id=v1%3A154660700975256460; Max-Age=63072000; Expires=Sun, 3 Jan 2021 13:03:29 GMT; Path=/; Domain=.twitter.com[\r][\n]"
+2019-Jan-04 18:33:26,613 [main] org.apache.http.wire 
+  DEBUG  << "status: 200 OK[\r][\n]"
+2019-Jan-04 18:33:26,613 [main] org.apache.http.wire 
+  DEBUG  << "strict-transport-security: max-age=631138519[\r][\n]"
+2019-Jan-04 18:33:26,614 [main] org.apache.http.wire 
+  DEBUG  << "x-access-level: read-write-directmessages[\r][\n]"
+2019-Jan-04 18:33:26,614 [main] org.apache.http.wire 
+  DEBUG  << "x-connection-hash: a0b3e4181177691cf053e9899c1a9e52[\r][\n]"
+2019-Jan-04 18:33:26,614 [main] org.apache.http.wire 
+  DEBUG  << "x-content-type-options: nosniff[\r][\n]"
+2019-Jan-04 18:33:26,614 [main] org.apache.http.wire 
+  DEBUG  << "x-frame-options: SAMEORIGIN[\r][\n]"
+2019-Jan-04 18:33:26,614 [main] org.apache.http.wire 
+  DEBUG  << "x-rate-limit-limit: 15[\r][\n]"
+2019-Jan-04 18:33:26,614 [main] org.apache.http.wire 
+  DEBUG  << "x-rate-limit-remaining: 13[\r][\n]"
+2019-Jan-04 18:33:26,616 [main] org.apache.http.wire 
+  DEBUG  << "x-rate-limit-reset: 1546607703[\r][\n]"
+2019-Jan-04 18:33:26,616 [main] org.apache.http.wire 
+  DEBUG  << "x-response-time: 197[\r][\n]"
+2019-Jan-04 18:33:26,616 [main] org.apache.http.wire 
+  DEBUG  << "x-transaction: 00cad564000214db[\r][\n]"
+2019-Jan-04 18:33:26,616 [main] org.apache.http.wire 
+  DEBUG  << "x-twitter-response-tags: BouncerCompliant[\r][\n]"
+2019-Jan-04 18:33:26,616 [main] org.apache.http.wire 
+  DEBUG  << "x-xss-protection: 1; mode=block; report=https://twitter.com/i/xss_report[\r][\n]"
+2019-Jan-04 18:33:26,617 [main] org.apache.http.wire 
+  DEBUG  << "[\r][\n]"
+2019-Jan-04 18:33:26,617 [main] org.apache.http.impl.conn.DefaultClientConnection 
+  DEBUG Receiving response: HTTP/1.1 200 OK
+2019-Jan-04 18:33:26,617 [main] org.apache.http.headers 
+  DEBUG << HTTP/1.1 200 OK
+2019-Jan-04 18:33:26,617 [main] org.apache.http.headers 
+  DEBUG << cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+2019-Jan-04 18:33:26,617 [main] org.apache.http.headers 
+  DEBUG << content-disposition: attachment; filename=json.json
+2019-Jan-04 18:33:26,617 [main] org.apache.http.headers 
+  DEBUG << content-encoding: gzip
+2019-Jan-04 18:33:26,617 [main] org.apache.http.headers 
+  DEBUG << content-length: 1020
+2019-Jan-04 18:33:26,617 [main] org.apache.http.headers 
+  DEBUG << content-type: application/json;charset=utf-8
+2019-Jan-04 18:33:26,617 [main] org.apache.http.headers 
+  DEBUG << date: Fri, 04 Jan 2019 13:03:29 GMT
+2019-Jan-04 18:33:26,617 [main] org.apache.http.headers 
+  DEBUG << expires: Tue, 31 Mar 1981 05:00:00 GMT
+2019-Jan-04 18:33:26,621 [main] org.apache.http.headers 
+  DEBUG << last-modified: Fri, 04 Jan 2019 13:03:29 GMT
+2019-Jan-04 18:33:26,621 [main] org.apache.http.headers 
+  DEBUG << pragma: no-cache
+2019-Jan-04 18:33:26,621 [main] org.apache.http.headers 
+  DEBUG << server: tsa_k
+2019-Jan-04 18:33:26,621 [main] org.apache.http.headers 
+  DEBUG << set-cookie: personalization_id="v1_HkdAIfxCBdi2SneyF2E/Eg=="; Max-Age=63072000; Expires=Sun, 3 Jan 2021 13:03:29 GMT; Path=/; Domain=.twitter.com
+2019-Jan-04 18:33:26,622 [main] org.apache.http.headers 
+  DEBUG << set-cookie: lang=en; Path=/
+2019-Jan-04 18:33:26,622 [main] org.apache.http.headers 
+  DEBUG << set-cookie: guest_id=v1%3A154660700975256460; Max-Age=63072000; Expires=Sun, 3 Jan 2021 13:03:29 GMT; Path=/; Domain=.twitter.com
+2019-Jan-04 18:33:26,622 [main] org.apache.http.headers 
+  DEBUG << status: 200 OK
+2019-Jan-04 18:33:26,622 [main] org.apache.http.headers 
+  DEBUG << strict-transport-security: max-age=631138519
+2019-Jan-04 18:33:26,622 [main] org.apache.http.headers 
+  DEBUG << x-access-level: read-write-directmessages
+2019-Jan-04 18:33:26,623 [main] org.apache.http.headers 
+  DEBUG << x-connection-hash: a0b3e4181177691cf053e9899c1a9e52
+2019-Jan-04 18:33:26,623 [main] org.apache.http.headers 
+  DEBUG << x-content-type-options: nosniff
+2019-Jan-04 18:33:26,623 [main] org.apache.http.headers 
+  DEBUG << x-frame-options: SAMEORIGIN
+2019-Jan-04 18:33:26,623 [main] org.apache.http.headers 
+  DEBUG << x-rate-limit-limit: 15
+2019-Jan-04 18:33:26,624 [main] org.apache.http.headers 
+  DEBUG << x-rate-limit-remaining: 13
+2019-Jan-04 18:33:26,624 [main] org.apache.http.headers 
+  DEBUG << x-rate-limit-reset: 1546607703
+2019-Jan-04 18:33:26,624 [main] org.apache.http.headers 
+  DEBUG << x-response-time: 197
+2019-Jan-04 18:33:26,624 [main] org.apache.http.headers 
+  DEBUG << x-transaction: 00cad564000214db
+2019-Jan-04 18:33:26,624 [main] org.apache.http.headers 
+  DEBUG << x-twitter-response-tags: BouncerCompliant
+2019-Jan-04 18:33:26,624 [main] org.apache.http.headers 
+  DEBUG << x-xss-protection: 1; mode=block; report=https://twitter.com/i/xss_report
+2019-Jan-04 18:33:26,633 [main] org.apache.http.impl.client.DefaultHttpClient 
+  DEBUG Connection can be kept alive indefinitely
+2019-Jan-04 18:33:26,654 [main] io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder 
+  DEBUG Parsing response as: application/json;charset=utf-8
+2019-Jan-04 18:33:26,654 [main] org.apache.http.wire 
+  DEBUG  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x0][0xec][0x97][0xdd][0x8f][0xda]8[0x10][0xc0][0xff][0x95]([0xaf][0xb7][0xda][0xb5][0x9d][0xef]H}X[0x95]"[0xf5]^[0xaf][0xba][0x97]RY&[0x18][0xb0][0xd6][0xd8][0xd4]vJ[0xb9][0xd5][0xfe][0xef]7&@[0x2]d[0xab][0xd3][0xea][0xfa]P[0xd5]<%[0xf3][0xe1][0xb1]g<[0xf3]#[0x9f][0x9f][0xe3][0xc6]p[0xe6][0xf8][0x82]2[0x17][0xd7][0xf1][0xd4][0x88][0xe8]O[0xa6]"[0x94]F[0x98][0xd4][0xa8][0xaa]I[0x12][0xfd][0x81][0xe0][0x17][0x11][0x84][0xab][0xf8].[0x16][0x8b][0xb8][0xc6][0xa8][0xc4]8GyN[0x8a],EY[0x8a][0xd3][0xcc]+[0xa8]u[0x6][0x96][0x18][0xd1][0x82][0x9f][0xe3][0xdf][0xfd][0xfa][0x1f]#[0xb6][0x89][0xe][0x11][0x85]ZEn-l[0xe4]v[0x9c][0xbb]h'[0xdc]:[0x1a]F/[0xea][0xa4][0xaa]q[0x15]}[0xfc][0xeb][0xd3]!v[0xf4][0xd8]:[0xbd][0x1]?[0xad][0xfc]r[0xa6]U[0x8d][0xdf]v\/[0x99][0xb4][0xfc].[0xe6][0xca][0x9]'[0xb8][0x8d][0xeb][0xe7]x[0xcd][0xec][0xda][0xb1][0x15]<[0xfe]r[0x17][0xdb][0xfd]f[0xae][0xe5][0xf1][0xa5][0xb5][0xdc][0xd0][0x8d]7[0xd6][0xea]$2[0x9d][0xf2][0x5]Luk[0x1a][0xe][0xfb][0x9c][0xb5][0x8]%[\r][0x8b][0xd6][0x86]/[0xdf][0xcd][0xe2][0xb5]s[0xdb]z[0xf6]0{[0xd8][0xed]v[0xf7]B-[0xc5]w[0xc7][0x9b][0xb5][0xd2]R[0xaf][0xf6][0xf7][0x8d][0xde][0x80]*[0x8e][0xc][0x97]`[0xaa][0xf4]RK[0xa9]w[0xb3]n[\r][0xfe][0xb7][0xb0]k&[0x9f]`Gb[0xd1][0xad]:{`[0x9d][0xca][0xa7]SQ[0xc3][0xb7]rO[0x9d][0x86][0xf4]1[0xd7]Z[0xea]3[0xac]Z)_QvY[0xbe]58[0x1c]l[0xdc][0xf7][0xa8]z[0xcd][0xd3]B=[0xb8][0xa2][0x8a]m[0xf8]I[0xed]=|"[0xbb]j[0x17]%.3T[0x14]Y[0x9][0x8f]E[0x81][0xc9]E[0xb5]o[0xb4]p[0xac]n[0xad][0xb8];{[0xd4][0x1d][0x1e][0xc4][0x17][0x91][0xe2]af[0x8][0x2][0xb5][0xd4]MW[0xdf]:[0x86][0xb7][0x5][0x7]s[0xb1][0xed][0x5]P[0xa7][0xd3][0xfe][0x86][0xc5][0xbe][0xb0]{[0xee][0xab][0x9][0xe5][0xdc][0x1a][\r]u[0x1a][0xde][0x92][0xae]6[0xdc]X[0xda][0xe8]V[0xc1][0x8d]D 3[0x82][0xab][0xc5]P"[0x85][0xf5][0x1d][0xd1][0xb].z[0xe4][0xd3][0xba][0x8d]&[0xbc][0x89]H[0x11][0xa1][0xa2]FYM[0xca][0xbe]GJ[0xd8][0xe8][0x92]}[0x83]{$[0x1c][0x1f][0xae][0xd9][0xba][0x86][0xea][0xe5][0xd2]rw:[0x84][0x13][0x1b]N[0xff][0xd1][0xea][0x9c][0xf5][0x15][0xd7][0x94]+6[0x97][0x83][\r][0xe3]F,[0xc5]@[0xd0]][0x84]~i\`[0xd8]0S+[0xd8][0x19][0xf7][0xad][0xd1]h[0xe5][0x8c][0x98]C[0xb7][0xc0])[0xaf][0x97][0x13][0x96]:[0xc3][0x94][0x95][0xc][0xd4]cR[0xc8][0xe2][0x8d][0x13][0xa4]q)$[0xa7]s[0xd6]<[0xad][0xc][0x84][0xf5][0xa9][0x91][0xde]?[0x9e]f[0xd3]r[0xfa][0x18][0x8f][0xda][0x88][\r][q:[0xa8][0xda][0x8f]l[0xa8]o1[0xfb][0x3]K[0x7][0xef]7;[0x1a][0x84][0xe8]{[0x94][0xcd][0xed][0xbd][0xdb][0x89][0xcd][0xaa][0xeb]L[0xeb]D[0xf3][0xb4][0x9f]=,[0xf8][0x92][0xb5][0xd2][0xd1][0xb]_{+W[0xda]l[0x98][0xbc][0xdf]BFG[0x2][0x9d][0xf6]y[0x8]gZ<)[0xd4][0xd3]9[0xc9]x[0xf2][0x88][0xa7]d[0xa0][0xb5]b[0xc1][0xe7][0xcc][0xd0][0xb9]6[0xb]h[0xed][0x93][0xdd]{4[0xf9][0xf0]a2b[0x7]/[0xf2]l5[0x1][0xa3]i>[0xb0][0xf2][0xa3][0xf9][0xac]M[0xe][0xbf][0x81][0x16][0xee][0xda]M[0xc1][0xe2][0x1a][0xe6]/[0x94][0x1][0xe6],[0x5]g[0xe8][0x1e][0xe8][0x8d][0xa3][0xc3][0xb9]FW[0xe7]<[0xf9][0x8c][0xa6][0xe5][0xa4][0xec][0xda]S[0xf8][0xcb]|[0xd1][0xb0]0[0xac][0xbe][0xb6][0xdc]:j[0xb9][0xbf][0xf3]G[0x9d][0xd2][0xe]z[0xa3][0x9b][0x19][0xf6],[0xed][0xef]7u[0xfb][0xad][0x1f]4[0xca][0xf7][0xd8][0xcb][0xa1][0xbf]N[0x17][0xac][0xd1][0x90]:[0xa1][0xa0][0xa9][0xfb];'Y[0xc3]{}[0xdf]D[0xe7][0x99]i[0xe9][0xd7][0x16][0x6][0xca]q[0x16][0x9f][0x3][0x1a]~@[0xd8]p[0xa2][0xc0][0x0][0xf0][0xfd]?"Z\[0xbb][\r]$}[0x17][0xbf][0xdc][0xbd][0xce]e[0x98]9IZc2[0xce]eT[0xe1][0x14][0xe3][0x82][0x94]UZ[0x91][0xb4][0xbc][0xe2][0xf2][0x95][0xf6]-\Nj[0x94][0xd6][0xa8][0xc]\[0xe]\[0xe]\[0xe]\[0xe]\[0xe]\[0xe]\>r[0x19][0x3][0x97][0xcb]W[0xb8]\[0xe6])"U[0x9e][0xe7]UV%[0xc5]5[0x97]/[0xb5]o[0xe1]2[0xa9]S[0x88][0x9e][0x6].[0x7].[0x7].[0x7].[0x7].[0x7].[0xff][0xc6]\[0xf6]3[0xe7]@[0xc6]$[0x2]([0x13]\g[0xd9]([0x97]Q[0x99][0xe0][0x9c]T[0xa4]H0[0x81][0x99][0x8c].[0xb9]|[0xad][0xfd][0xaf]\[0x1e]F[0xaf][0xea][0xc][0xa2][0xe3][0xc0][0xe5][0xc0][0xe5][0xc0][0xe5][0xc0][0xe5][0xc0][0xe5][0xc0][0xe5]_[0x83][0xcb][0xf8]gs9[0xf1]_[0xac][0xf0][0xe9]:[0xce]eB0J[0x8a][0x1c][0x93]4[0xc5]yz[0xcd][0xe5]K[0xed][0xdb][0xb8][0xc][0xc] n[0xe0]r[0xe0]r[0xe0]r[0xe0]r[0xe0]r[0xe0][0xf2]/[0xc1][0xe5][0xff][0xe5]{[0xf9][0xcb][0xbf][0x0][0x0][0x0][0xff][0xff][0x3][0x0]1[0xfe][0xe5][0xe][0xf9]%[0x0][0x0]"
+2019-Jan-04 18:33:26,658 [main] io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder 
+  DEBUG Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-Jan-04 18:33:26,739 [main] org.apache.http.impl.conn.BasicClientConnectionManager 
+  DEBUG Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@76a36b71
+2019-Jan-04 18:33:26,739 [main] org.apache.http.impl.conn.BasicClientConnectionManager 
+  DEBUG Connection can be kept alive indefinitely
+2019-Jan-04 18:33:26,743 [main] com.poc.twitter.test.GET_statuses_home_timeline_Test 
+  WARN  Ending the Base Test Method
+2019-Jan-04 18:33:26,757 [main] com.poc.twitter.test.GET_statuses_home_timeline_Test 
+  INFO  ****************************** starting 1St test case *****************************************
+2019-Jan-04 18:33:27,015 [main] com.poc.twitter.test.GET_statuses_home_timeline_Test 
+  INFO  ****************************** starting 2nd test case *****************************************
+2019-Jan-04 18:33:27,026 [main] com.poc.twitter.test.GET_statuses_home_timeline_Test 
+  INFO  ****************************** starting 3rd test case *****************************************
+2019-Jan-04 18:33:27,036 [main] com.poc.twitter.test.GET_statuses_home_timeline_Test 
+  INFO  ****************************** starting 4St test case *****************************************
+2019-Jan-04 18:33:27,050 [main] com.poc.twitter.test.GET_statuses_home_timeline_Test 
+  INFO  ****************************** starting 5St test case *****************************************
+2019-Jan-04 18:33:27,060 [main] com.poc.twitter.test.GET_statuses_home_timeline_Test 
+  INFO  ****************************** starting 6St test case *****************************************
+2019-Jan-04 18:33:27,072 [main] com.poc.twitter.test.GET_statuses_home_timeline_Test 
+  INFO  ****************************** starting 7th test case *****************************************

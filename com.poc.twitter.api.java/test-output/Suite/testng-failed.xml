@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.poc.qa.listeners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.poc.twitter.test.GET_statuses_home_timeline_Test">
+        <methods>
+          <include name="T06_Search_Statuses_count"/>
+          <include name="T07_Search_Statuses_text"/>
+          <include name="getLatestTweet"/>
+        </methods>
+      </class> <!-- com.poc.twitter.test.GET_statuses_home_timeline_Test -->
+      <class name="com.poc.twitter.test.POST_statuses_update_Test">
+        <methods>
+          <include name="T06_Search_Statuses_count"/>
+          <include name="createTweet"/>
+        </methods>
+      </class> <!-- com.poc.twitter.test.POST_statuses_update_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.poc.twitter.test.GET_statuses_home_timeline_Test">
+        <methods>
+          <include name="T06_Search_Statuses_count"/>
+          <include name="T07_Search_Statuses_text"/>
+          <include name="getLatestTweet"/>
+        </methods>
+      </class> <!-- com.poc.twitter.test.GET_statuses_home_timeline_Test -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
